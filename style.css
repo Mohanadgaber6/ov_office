@@ -150,7 +150,7 @@ img { max-width: 100%; height: auto; }
   text-decoration: none;
   cursor: pointer;
   transition: opacity 0.2s ease;
-  margin-right: 40px;
+  margin-right: 0;
 }
 .nav-logo:hover { opacity: 0.85; }
 .nav-logo .logo-icon svg { display: block; }
@@ -161,6 +161,24 @@ img { max-width: 100%; height: auto; }
   letter-spacing: 0.3px;
   margin-top: 4px;
 }
+
+/* BRAND LOGO IMAGES */
+.brand-logo {
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+}
+.brand-logo-large {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+}
+.brand-logo-footer {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
 .nav-links {
   display: flex;
   gap: 22px;
@@ -887,10 +905,14 @@ img { max-width: 100%; height: auto; }
 }
 
 @media (max-width: 480px) {
-  .hero-title { font-size: 1.8rem; }
+  .hero-title { font-size: 1.6rem; }
+  .section-title { font-size: 1.5rem; }
+  .why-title { font-size: 1.8rem; }
   .hero-logo-circle { width: 160px; height: 160px; }
+  .brand-logo-large { height: 60px; }
   .btn { padding: 12px 24px; font-size: 0.9rem; }
   .contact-form-wrap { padding: 24px 18px; }
+  .nav-container { padding: 0 16px; }
 }
 
 /* ================== PACKAGES ================== */
