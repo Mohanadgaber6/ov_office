@@ -41,7 +41,7 @@ ul { list-style: none; }
 img { max-width: 100%; height: auto; }
 
 /* منع تجاوز النصوص في كل مكان */
-* { word-break: break-word; overflow-wrap: break-word; }
+* { overflow-wrap: break-word; }
 
 /* ---- CONTAINER ---- */
 .container {
@@ -128,7 +128,7 @@ img { max-width: 100%; height: auto; }
   z-index: 1000;
   background: rgba(41,50,135,0.97);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(62,184,188,0.2);
+  border: none;
   transition: var(--transition);
 }
 .navbar.scrolled {
@@ -905,10 +905,10 @@ img { max-width: 100%; height: auto; }
     background: var(--blue-dark);
     flex-direction: column;
     padding: 24px 16px;
-    gap: 8px;
-    transform: translateY(-120%);
+    gap: 16px;
+    transform: translateY(-100vh);
     transition: var(--transition);
-    border-bottom: 2px solid var(--teal);
+    border: none;
     z-index: 999;
     box-shadow: 0 8px 24px rgba(0,0,0,0.3);
   }
