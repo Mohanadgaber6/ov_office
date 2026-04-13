@@ -489,7 +489,14 @@ img { max-width: 100%; height: auto; }
   transform: translateY(-8px);
   box-shadow: 0 20px 48px rgba(41,50,135,0.15);
 }
-.srv-icon { font-size: 2.8rem; margin-bottom: 10px; }
+.srv-icon {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .srv-num {
   position: absolute;
   top: 18px;
