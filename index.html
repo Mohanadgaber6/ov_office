@@ -43,14 +43,10 @@
       <div class="bubble b4"></div>
     </div>
     <div class="hero-content">
-      <div class="hero-logo-wrap">
-        <img src="logo_transparent.png" alt="أوفي" class="brand-logo-hero" />
-      </div>
-      <div class="hero-text">
-        <p class="hero-label">ملف تعريفي — PROFILE</p>
+      <div class="hero-text" style="text-align: center; margin: 0 auto;">
         <h1 class="hero-title">شريكك الذكي في<br/>تأسيس وتطوير أعمالك</h1>
-        <p class="hero-desc">حلول متكاملة في تأسيس الشركات، الخدمات الإدارية المالية، والتسويق الإلكتروني — كل ما تحتاجه تحت سقف واحد.</p>
-        <div class="hero-cta">
+        <p class="hero-desc" style="margin-left: auto; margin-right: auto; max-width: 600px;">حلول متكاملة في تأسيس الشركات، الخدمات الإدارية المالية، والتسويق الإلكتروني — كل ما تحتاجه تحت سقف واحد.</p>
+        <div class="hero-cta" style="justify-content: center;">
           <a href="#contact" class="btn btn-primary">ابدأ الآن</a>
           <a href="#services" class="btn btn-outline">استكشف خدماتنا</a>
         </div>
@@ -67,21 +63,23 @@
   <section class="section about" id="about">
     <div class="container">
       <div class="section-badge">من نحن</div>
-      <div class="about-grid">
-        <div class="about-text">
-          <h2 class="section-title">نقدم حلولاً متكاملة لقطاع الأعمال</h2>
-          <p class="about-body">
-            نحن شركة متخصصة في تقديم حلول متكاملة لقطاع الأعمال داخل المملكة العربية السعودية.
-            نساعد رواد الأعمال والشركات على بدء أعمالهم وتنظيمها وتطويرها بطريقة احترافية.
-            بخبرة عملية وفهم عميق للأنظمة، نقدم لعملائنا خدمات تسهّل عليهم الإجراءات وتختصر الوقت وتقلل الأخطاء.
-          </p>
-          <div class="goal-box">
-            <span class="goal-label">هدفنا :</span>
-            <span class="goal-text">أن نكون شريكك الحقيقي في نجاح مشروعك.</span>
-          </div>
+      <div class="about-tabs-container">
+        <div class="tabs-header">
+          <button class="tab-btn active" data-target="tab-about">من نحن؟</button>
+          <button class="tab-btn" data-target="tab-vision">رؤيتنا</button>
+          <button class="tab-btn" data-target="tab-mission">رسالتنا</button>
         </div>
-        <div class="about-visual">
-          <img src="logo_dark.png" alt="أوفي" class="brand-logo-about" />
+        <div class="tabs-content">
+          <div class="tab-pane active" id="tab-about">
+            <p><strong>أوفي الذكية</strong> هي جهة متخصصة في إدارة وتسهيل الخدمات الحكومية والإلكترونية في المملكة العربية السعودية، نعمل على تمكين أصحاب الأعمال من إنجاز جميع إجراءاتهم بكفاءة وسرعة دون تعقيد.</p>
+            <p>نقدّم حلولاً متكاملة تشمل تأسيس الشركات، وإدارة المعاملات، ومتابعة الجهات الحكومية، من خلال فريق متخصص يضمن لك تجربة سلسة ونتائج دقيقة.</p>
+          </div>
+          <div class="tab-pane" id="tab-vision">
+            <p>أن نصبح الخيار الأول والشريك الاستراتيجي الأمثل للشركات والمؤسسات الطامحة في المملكة، من خلال تقديم حلول مالية، قانونية، وإدارية شاملة ومبتكرة تعزز من قدرتهم التنافسية والتوسعية بثقة وراحة.</p>
+          </div>
+          <div class="tab-pane" id="tab-mission">
+            <p>نلتزم بتقديم خدمات احترافية تسهّل الإجراءات الحكومية على عملائنا، ونوفر لهم الوقت والجهد عبر حلول منظمة وسريعة تدعم نمو أعمالهم واستقرارها لتجربة متطورة وسريعة.</p>
+          </div>
         </div>
       </div>
     </div>
