@@ -11,22 +11,15 @@ const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbyz79DtWi5kHLX
 
 
 // ---- NAVBAR scroll effect ----
-const navbar       = document.getElementById('navbar');
-const scrollTopBtn = document.getElementById('scrollTop');
+const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 60) {
     navbar.classList.add('scrolled');
-    scrollTopBtn.classList.add('show');
   } else {
     navbar.classList.remove('scrolled');
-    scrollTopBtn.classList.remove('show');
   }
 }, { passive: true });
-
-scrollTopBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
 
 // ---- HAMBURGER menu ----
 const hamburger = document.getElementById('hamburger');
