@@ -40,7 +40,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 // ---- SCROLL ANIMATIONS ----
 const fadeEls = document.querySelectorAll(
   '.section-badge, .section-title, .about-body, .goal-box, .big-circle-card, ' +
-  '.testimoSwiper, .srv-card, .srv-detail-content, .srv-detail-title-card, ' +
+  '.testimo-card, .srv-card, .srv-detail-content, .srv-detail-title-card, ' +
   '.ci-item, .contact-form-wrap, .contact-info h3, .pkg-card'
 );
 
@@ -58,6 +58,9 @@ const observer = new IntersectionObserver((entries) => {
 fadeEls.forEach(el => observer.observe(el));
 
 // Stagger delays
+document.querySelectorAll('.testimo-card').forEach((item, i) => {
+  item.style.transitionDelay = `${i * 100}ms`;
+});
 document.querySelectorAll('.srv-card').forEach((card, i) => {
   card.style.transitionDelay = `${i * 70}ms`;
 });
@@ -163,22 +166,3 @@ tabBtns.forEach(btn => {
     document.getElementById(targetId).classList.add('active');
   });
 });
-
-// ---- TESTIMONIALS SWIPER ----
-if (typeof Swiper !== 'undefined') {
-  new Swiper('.testimoSwiper', {
-    slidesPerView: 1,
-    spaceBetween: 28,
-    grabCursor: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      }
-    }
-  });
-}
-
