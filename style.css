@@ -911,7 +911,7 @@ img { max-width: 100%; height: auto; }
   text-align: center;
   border-bottom: 1px solid var(--light-gray);
 }
-.pkg-medal { font-size: 3rem; margin-bottom: 10px; }
+.pkg-medal { margin-bottom: 15px; display: flex; justify-content: center; align-items: center; }
 .pkg-name {
   font-size: 1.3rem;
   font-weight: 900;
