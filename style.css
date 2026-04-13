@@ -966,6 +966,11 @@ img { max-width: 100%; height: auto; }
   padding: 14px 24px;
   cursor: pointer;
   transition: background 0.3s ease;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: right;
+  font-family: inherit;
 }
 .pkg-accordion-header:hover {
   background: var(--off-white);
