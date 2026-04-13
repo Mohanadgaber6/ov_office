@@ -126,7 +126,7 @@ img { max-width: 100%; height: auto; }
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(41,50,135,0.97);
+  background: transparent;
   backdrop-filter: blur(12px);
   border: none;
   transition: var(--transition);
@@ -327,14 +327,17 @@ img { max-width: 100%; height: auto; }
 .about-tabs-container {
   max-width: 800px;
   margin: 0 auto;
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
 .tabs-header {
   display: flex;
-  border-bottom: 2px solid var(--light-gray);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
 }
 .tab-btn {
   flex: 1;
@@ -344,13 +347,13 @@ img { max-width: 100%; height: auto; }
   font-family: 'Readex Pro', 'Cairo', sans-serif;
   font-size: 1.15rem;
   font-weight: 800;
-  color: var(--gray);
+  color: rgba(255,255,255,0.7);
   cursor: pointer;
   transition: var(--transition);
   position: relative;
 }
-.tab-btn:hover { color: var(--blue); background: var(--off-white); }
-.tab-btn.active { color: var(--blue); }
+.tab-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
+.tab-btn.active { color: #fff; }
 .tab-btn.active::after {
   content: '';
   position: absolute;
@@ -373,7 +376,7 @@ img { max-width: 100%; height: auto; }
 }
 .tab-pane p {
   font-size: 1.05rem;
-  color: var(--text-dark);
+  color: #fff;
   line-height: 1.9;
   margin-bottom: 16px;
   text-align: center;
