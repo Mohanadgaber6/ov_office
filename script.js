@@ -75,6 +75,14 @@ document.querySelectorAll('.pkg-card').forEach((card, i) => {
   card.style.transitionDelay = `${i * 100}ms`;
 });
 
+// ---- PACKAGES ACCORDION ----
+document.querySelectorAll('.pkg-accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const item = header.parentElement;
+    item.classList.toggle('active');
+  });
+});
+
 // ---- CONTACT FORM ----
 const form        = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
