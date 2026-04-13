@@ -1364,3 +1364,14 @@ img { max-width: 100%; height: auto; }
 }
 
 /* .snap-icon-themed & #footer-snapchat overrides removed — now inherits .footer-social a styling */
+/* Snapchat official yellow branding */
+#footer-snapchat {
+  background: #FFFC00 !important;
+  border-color: #FFFC00 !important;
+  color: #000 !important;
+}
+#footer-snapchat:hover {
+  background: #ffe600 !important;
+  border-color: #ffe600 !important;
+  color: #000 !important;
+}
