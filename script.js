@@ -166,3 +166,22 @@ tabBtns.forEach(btn => {
     document.getElementById(targetId).classList.add('active');
   });
 });
+
+// ---- TESTIMONIALS SWIPER ----
+if (typeof Swiper !== 'undefined') {
+  new Swiper('.testimoSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 28,
+    grabCursor: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      }
+    }
+  });
+}
+

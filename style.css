@@ -394,12 +394,18 @@ img { max-width: 100%; height: auto; }
   padding: 100px 0;
   position: relative;
 }
-.testimo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 28px;
-  position: relative;
-  z-index: 1;
+/* Swiper Pagination custom styles */
+.testimoSwiper .swiper-pagination-bullet {
+  background: rgba(255,255,255,0.4);
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.testimoSwiper .swiper-pagination-bullet-active {
+  background: var(--teal);
+  width: 24px;
+  border-radius: 5px;
 }
 .testimo-card {
   background: rgba(255,255,255,0.08);
