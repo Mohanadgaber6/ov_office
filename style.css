@@ -1357,3 +1357,24 @@ img { max-width: 100%; height: auto; }
   width: 100%;
   height: 100%;
 }
+
+/* Snapchat icon — تلوين بألوان الموقع عبر CSS filter */
+.snap-icon-themed {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+  /* Converts yellow (#FFFC00) → site blue/teal tone */
+  filter: hue-rotate(175deg) saturate(1.5) brightness(0.85);
+  transition: filter 0.3s ease, transform 0.3s ease;
+  display: block;
+}
+.snap-icon-themed:hover {
+  filter: hue-rotate(175deg) saturate(2) brightness(1.1);
+  transform: translateY(-3px);
+}
+#footer-snapchat {
+  padding: 0;
+  background: none !important;
+  border: none !important;
+}
