@@ -1011,13 +1011,6 @@ img { max-width: 100%; height: auto; }
   background: var(--blue-light);
 }
 
-.pkg-extra .pkg-feat-title {
-  color: var(--teal-dark) !important;
-}
-.pkg-plat .pkg-feat-title {
-  color: var(--blue) !important;
-}
-
 .btn-pkg {
   display: block;
   margin: 0 28px;
