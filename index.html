@@ -24,9 +24,9 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#hero">الرئيسية</a></li>
         <li><a href="#about">من نحن</a></li>
-        <li><a href="#testimonials">آراء العملاء</a></li>
         <li><a href="#services">خدماتنا</a></li>
         <li><a href="#packages">الباقات</a></li>
+        <li><a href="#testimonials">آراء العملاء</a></li>
         <li><a href="#contact">تواصل معنا</a></li>
       </ul>
       <button type="button" class="hamburger" id="hamburger" aria-label="Menu">
@@ -38,11 +38,12 @@
   <!-- ============ HERO ============ -->
   <section class="hero" id="hero">
 
-    <div class="hero-content">
-      <div class="hero-text" style="text-align: center; margin: 0 auto;">
-        <h1 class="hero-title">شريكك الذكي في<br/>تأسيس وتطوير أعمالك</h1>
-        <p class="hero-desc" style="margin-left: auto; margin-right: auto; max-width: 600px;">حلول متكاملة في تأسيس الشركات، الخدمات الإدارية المالية، والتسويق الإلكتروني — كل ما تحتاجه تحت سقف واحد.</p>
-        <div class="hero-cta" style="justify-content: center;">
+    <div class="hero-content" style="align-items: flex-start;">
+      <div class="hero-text" style="text-align: right; margin: 0;">
+        <div class="hero-subtitle" style="font-size: 1.6rem; font-weight: 800; color: #ffffff; margin-bottom: 12px; text-shadow: 0 2px 6px rgba(0,0,0,0.6);">أوفي الذكية</div>
+        <h1 class="hero-title" style="text-align: right;">شريكك الذكي في<br/>إدارة خدمات أعمالك</h1>
+        <p class="hero-desc" style="margin: 0; text-align: right; max-width: 600px;">حلول متكاملة للخدمات الحكومية والإلكترونية بكفاءة واحترافية</p>
+        <div class="hero-cta" style="justify-content: flex-start;">
           <a href="#contact" class="btn btn-primary">ابدأ الآن</a>
           <a href="#services" class="btn btn-outline">استكشف خدماتنا</a>
         </div>
@@ -54,8 +55,15 @@
 
 
   <!-- ============ ABOUT ============ -->
-  <section class="section about" id="about" style="background-color: #ffffff; padding: 80px 0;">
-    <div class="container">
+  <section class="section about" id="about">
+    <!-- Abstract Backgrounds -->
+    <img src="logo_transparent.png" alt="" class="about-bg-logo" />
+    <div class="about-bg-circles">
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="circle c3"></div>
+    </div>
+    <div class="container" style="position: relative; z-index: 2;">
       <div class="section-badge" style="margin: 0 auto; display: table; margin-bottom: 20px;">من نحن</div>
       <h2 class="section-title center" style="margin-bottom: 40px;">تعرف على أوفي للخدمات</h2>
       
@@ -67,14 +75,14 @@
         </div>
         <div class="tabs-content">
           <div class="tab-pane active" id="tab-about">
-            <p><strong>أوفي الذكية</strong> هي جهة متخصصة في إدارة وتسهيل الخدمات الحكومية والإلكترونية في المملكة العربية السعودية، نعمل على تمكين أصحاب الأعمال من إنجاز جميع إجراءاتهم بكفاءة وسرعة دون تعقيد.</p>
-            <p>نقدّم حلولاً متكاملة تشمل تأسيس الشركات، وإدارة المعاملات، ومتابعة الجهات الحكومية، من خلال فريق متخصص يضمن لك تجربة سلسة ونتائج دقيقة.</p>
+            <p>أوفي الذكية جهة متخصصة في إدارة وتسهيل الخدمات الحكومية والإلكترونية في المملكة العربية السعودية، نعمل على تمكين أصحاب الأعمال من إنجاز جميع إجراءاتهم بكفاءة وسرعة، دون تعقيد أو تأخير.</p>
+            <p>نقدّم حلولاً متكاملة تشمل تأسيس الشركات، وإدارة المعاملات، ومتابعة الجهات الحكومية، من خلال فريق متخصص يضمن لك تجربة عمل سلسة ونتائج دقيقة تعزّز استقرار أعمالك ونموها.</p>
           </div>
           <div class="tab-pane" id="tab-vision">
-            <p>أن نصبح الخيار الأول والشريك الاستراتيجي الأمثل للشركات والمؤسسات الطامحة في المملكة، من خلال تقديم حلول مالية، قانونية، وإدارية شاملة ومبتكرة تعزز من قدرتهم التنافسية والتوسعية بثقة وراحة.</p>
+            <p>أن نعيد تعريف طريقة إدارة الخدمات الحكومية والإلكترونية في المملكة، ونكون الشريك الذي تعتمد عليه الشركات والمؤسسات لتحقيق نمو أكثر تنظيماً وكفاءة.</p>
           </div>
           <div class="tab-pane" id="tab-mission">
-            <p>نلتزم بتقديم خدمات احترافية تسهّل الإجراءات الحكومية على عملائنا، ونوفر لهم الوقت والجهد عبر حلول منظمة وسريعة تدعم نمو أعمالهم واستقرارها لتجربة متطورة وسريعة.</p>
+            <p>نلتزم بتقديم حلول احترافية تسهّل إدارة الخدمات الحكومية والإلكترونية، ونمكّن عملاءنا من إنجاز معاملاتهم بكفاءة وسرعة، مع توفير الوقت والجهد ودعم نمو أعمالهم واستقرارها.</p>
           </div>
         </div>
       </div>
@@ -85,103 +93,12 @@
   <section class="section why-us" id="why-us">
     <div class="container">
       <div class="why-us-inner">
-        <div class="why-us-label">لماذا أوفي؟</div>
+        <div class="why-us-label">لماذا أوفي الذكية؟</div>
         <div class="why-us-points">
           <div class="why-point">
-            <div class="why-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
             <p>لأننا نقدم <strong>خبرة متكاملة وشراكة حقيقية</strong> تقود مشروعك نحو النجاح بثقة واحترافية — معنا <strong>نوفر وقتك وجهدك</strong> ونحول فكرتك إلى واقع ناجح من البداية حتى التشغيل الكامل</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ TESTIMONIALS ============ -->
-  <section class="section testimonials" id="testimonials">
-    <div class="container">
-      <div class="section-badge light" style="margin: 0 auto; display: table; margin-bottom: 20px;">آراء العملاء</div>
-      <h2 class="section-title center" style="color: var(--white); margin-bottom: 50px;">ماذا يقول عملاؤنا عنا</h2>
-      
-      <!-- Swiper: 3 slides × 2 reviews each -->
-      <div class="swiper testimoSwiper" style="overflow:hidden; padding-bottom:54px;">
-        <div class="swiper-wrapper">
-
-          <!-- Slide 1 -->
-          <div class="swiper-slide">
-            <div class="testimo-pair">
-              <div class="testimo-card">
-                <div class="testimo-stars">★★★★★</div>
-                <p class="testimo-text">"تجربتي مع المكتب كانت ممتازة جدًا، حصلت على استشارة واضحة وساعدتني أفهم وضعي بشكل أفضل. الفريق متعاون وبيتابع كل التفاصيل بدقة."</p>
-                <hr class="testimo-hr" />
-                <div class="testimo-footer">
-                  <div class="testimo-info"><h4>أحمد فاروق</h4><span>محاسب قانوني</span></div>
-                  <div class="testimo-avatar">أ</div>
-                </div>
-              </div>
-              <div class="testimo-card">
-                <div class="testimo-stars">★★★★★</div>
-                <p class="testimo-text">"كنت محتاجة مساعدة سريعة، وبصراحة الخدمة كانت فوق التوقعات. الرد كان سريع جدًا والتوضيح كان بسيط ومفهوم."</p>
-                <hr class="testimo-hr" />
-                <div class="testimo-footer">
-                  <div class="testimo-info"><h4>منى كمال</h4><span>رائدة أعمال</span></div>
-                  <div class="testimo-avatar">م</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="swiper-slide">
-            <div class="testimo-pair">
-              <div class="testimo-card">
-                <div class="testimo-stars">★★★★★</div>
-                <p class="testimo-text">"التعامل كان احترافي جدًا من أول تواصل لحد حل المشكلة. حسيت بثقة كبيرة في خبرتهم وطريقة إدارتهم للموضوع."</p>
-                <hr class="testimo-hr" />
-                <div class="testimo-footer">
-                  <div class="testimo-info"><h4>خالد محمود</h4><span>مدير مبيعات</span></div>
-                  <div class="testimo-avatar">خ</div>
-                </div>
-              </div>
-              <div class="testimo-card">
-                <div class="testimo-stars">★★★★★</div>
-                <p class="testimo-text">"المكتب قدملي دعم قوي في وقت صعب، وكانوا دايمًا متابعين معايا خطوة بخطوة لحد ما وصلنا لحل مرضي."</p>
-                <hr class="testimo-hr" />
-                <div class="testimo-footer">
-                  <div class="testimo-info"><h4>نجلاء حسن</h4><span>موظفة إدارية</span></div>
-                  <div class="testimo-avatar">ن</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="swiper-slide">
-            <div class="testimo-pair">
-              <div class="testimo-card">
-                <div class="testimo-stars">★★★★★</div>
-                <p class="testimo-text">"خدمة متميزة جدًا وسرعة في التنفيذ، فعلاً فريق فاهم شغله وبيقدم حلول عملية لأي مشكلة."</p>
-                <hr class="testimo-hr" />
-                <div class="testimo-footer">
-                  <div class="testimo-info"><h4>يوسف عبد الرحمن</h4><span>مستثمر</span></div>
-                  <div class="testimo-avatar">ي</div>
-                </div>
-              </div>
-              <div class="testimo-card">
-                <div class="testimo-stars">★★★★★</div>
-                <p class="testimo-text">"أنصح أي حد يتعامل معاهم، عندهم مصداقية واحترافية عالية جدًا، وساعدوني أوصل لأفضل نتيجة ممكنة."</p>
-                <hr class="testimo-hr" />
-                <div class="testimo-footer">
-                  <div class="testimo-info"><h4>هبة علي</h4><span>مصممة جرافيك</span></div>
-                  <div class="testimo-avatar">ه</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
@@ -303,7 +220,10 @@
         <div class="srv-card" id="srv-legal">
           <div class="srv-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="40" height="40">
-              <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>
+              <path d="M17 2l4 4-4 4"/>
+              <path d="M3 11v-1a4 4 0 0 1 4-4h14"/>
+              <path d="M7 22l-4-4 4-4"/>
+              <path d="M21 13v1a4 4 0 0 1-4 4H3"/>
             </svg>
           </div>
           <div class="srv-num">7</div>
@@ -395,17 +315,7 @@
         <!-- Silver -->
         <div class="pkg-card pkg-silver">
           <div class="pkg-header">
-            <div class="pkg-medal">
-              <svg viewBox="0 0 100 100" width="75" height="75">
-                <path d="M 30 70 L 35 95 L 50 85 L 65 95 L 70 70 Z" fill="#94a3b8" />
-                <path d="M 35 70 L 35 95 L 50 85 Z" fill="#64748b" />
-                <circle cx="50" cy="40" r="35" fill="#f1f5f9" />
-                <circle cx="50" cy="40" r="26" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="4"/>
-                <text x="51" y="55" fill="#64748b" font-family="'Cairo', sans-serif" font-weight="900" font-size="42" text-anchor="middle">1</text>
-              </svg>
-            </div>
-            <h3 class="pkg-name">الباقة الفضية</h3>
-            <p class="pkg-en">Silver Package</p>
+            <h3 class="pkg-name">باقة الأساسية</h3>
             <p class="pkg-tagline">الخيار الأمثل للمشاريع الناشئة</p>
           </div>
           <ul class="pkg-features pkg-accordion">
@@ -530,24 +440,12 @@
               </ul>
             </li>
           </ul>
-          <a href="#contact" class="btn btn-pkg">تواصل معنا</a>
+          <a href="https://wa.me/966560096462" target="_blank" class="btn btn-pkg">اشترك</a>
         </div>
 
-        <!-- Gold -->
         <div class="pkg-card pkg-gold">
           <div class="pkg-header">
-            <div class="pkg-medal">
-              <svg viewBox="0 0 100 100" width="75" height="75">
-                <path d="M 20 20 L 80 20 L 75 50 C 70 70, 55 75, 55 75 L 55 85 L 65 85 L 65 95 L 35 95 L 35 85 L 45 85 L 45 75 C 45 75, 30 70, 25 50 Z" fill="#fbbf24" />
-                <path d="M 20 20 L 80 20 L 75 35 L 25 35 Z" fill="#f59e0b" />
-                <path d="M 35 25 L 65 25" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
-                <path d="M 20 25 C 2 25, 2 45, 23 45" fill="none" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
-                <path d="M 80 25 C 98 25, 98 45, 77 45" fill="none" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
-                <path d="M 50 42 L 53 50 L 62 50 L 55 55 L 57 63 L 50 58 L 43 63 L 45 55 L 38 50 L 47 50 Z" fill="#fff" opacity="0.9"/>
-              </svg>
-            </div>
-            <h3 class="pkg-name">الباقة الذهبية</h3>
-            <p class="pkg-en">Gold Package</p>
+            <h3 class="pkg-name">باقة الأعمال</h3>
             <p class="pkg-tagline">تمنحك المزيد من التوفير والفائدة</p>
           </div>
           <ul class="pkg-features pkg-accordion">
@@ -698,24 +596,13 @@
               </ul>
             </li>
           </ul>
-          <a href="#contact" class="btn btn-pkg btn-pkg-gold">تواصل معنا</a>
+          <a href="https://wa.me/966560096462" target="_blank" class="btn btn-pkg btn-pkg-gold">اشترك</a>
         </div>
 
         <!-- Platinum -->
         <div class="pkg-card pkg-platinum">
           <div class="pkg-header">
-            <div class="pkg-medal">
-              <svg viewBox="0 0 100 100" width="75" height="75">
-                <path d="M 50 95 L 10 40 L 30 15 L 70 15 L 90 40 Z" fill="#2dd4bf" />
-                <path d="M 50 95 L 10 40 L 90 40 Z" fill="#14b8a6" />
-                <path d="M 50 95 L 30 40 L 70 40 Z" fill="#0d9488" />
-                <path d="M 10 40 L 30 15 L 50 40 Z" fill="#99f6e4" />
-                <path d="M 90 40 L 70 15 L 50 40 Z" fill="#99f6e4" />
-                <path d="M 30 15 L 70 15 L 50 40 Z" fill="#ccfbf1" />
-              </svg>
-            </div>
-            <h3 class="pkg-name">الباقة البلاتينية</h3>
-            <p class="pkg-en">Platinum Package</p>
+            <h3 class="pkg-name">باقة الأعمال +</h3>
             <p class="pkg-tagline">مثالية للذين يبحثون عن الأفضل</p>
           </div>
           <ul class="pkg-features pkg-accordion">
@@ -911,9 +798,97 @@
               </ul>
             </li>
           </ul>
-          <a href="#contact" class="btn btn-pkg btn-pkg-plat">تواصل معنا</a>
+          <a href="https://wa.me/966560096462" target="_blank" class="btn btn-pkg btn-pkg-plat">اشترك</a>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-badge light" style="margin: 0 auto; display: table; margin-bottom: 20px;">آراء العملاء</div>
+      <h2 class="section-title center" style="color: var(--white); margin-bottom: 50px;">ماذا يقول عملاؤنا عنا</h2>
+      
+      <!-- Swiper: 3 slides × 2 reviews each -->
+      <div class="swiper testimoSwiper" style="overflow:hidden; padding-bottom:54px;">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="testimo-pair">
+              <div class="testimo-card">
+                <div class="testimo-stars">★★★★★</div>
+                <p class="testimo-text">"تجربتي مع المكتب كانت ممتازة جدًا، حصلت على استشارة واضحة وساعدتني أفهم وضعي بشكل أفضل. الفريق متعاون وبيتابع كل التفاصيل بدقة."</p>
+                <hr class="testimo-hr" />
+                <div class="testimo-footer">
+                  <div class="testimo-info"><h4>أحمد فاروق</h4><span>محاسب قانوني</span></div>
+                  <div class="testimo-avatar">أ</div>
+                </div>
+              </div>
+              <div class="testimo-card">
+                <div class="testimo-stars">★★★★★</div>
+                <p class="testimo-text">"كنت محتاجة مساعدة سريعة، وبصراحة الخدمة كانت فوق التوقعات. الرد كان سريع جدًا والتوضيح كان بسيط ومفهوم."</p>
+                <hr class="testimo-hr" />
+                <div class="testimo-footer">
+                  <div class="testimo-info"><h4>منى كمال</h4><span>رائدة أعمال</span></div>
+                  <div class="testimo-avatar">م</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="testimo-pair">
+              <div class="testimo-card">
+                <div class="testimo-stars">★★★★★</div>
+                <p class="testimo-text">"التعامل كان احترافي جدًا من أول تواصل لحد حل المشكلة. حسيت بثقة كبيرة في خبرتهم وطريقة إدارتهم للموضوع."</p>
+                <hr class="testimo-hr" />
+                <div class="testimo-footer">
+                  <div class="testimo-info"><h4>خالد محمود</h4><span>مدير مبيعات</span></div>
+                  <div class="testimo-avatar">خ</div>
+                </div>
+              </div>
+              <div class="testimo-card">
+                <div class="testimo-stars">★★★★★</div>
+                <p class="testimo-text">"المكتب قدملي دعم قوي في وقت صعب، وكانوا دايمًا متابعين معايا خطوة بخطوة لحد ما وصلنا لحل مرضي."</p>
+                <hr class="testimo-hr" />
+                <div class="testimo-footer">
+                  <div class="testimo-info"><h4>نجلاء حسن</h4><span>موظفة إدارية</span></div>
+                  <div class="testimo-avatar">ن</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="testimo-pair">
+              <div class="testimo-card">
+                <div class="testimo-stars">★★★★★</div>
+                <p class="testimo-text">"خدمة متميزة جدًا وسرعة في التنفيذ، فعلاً فريق فاهم شغله وبيقدم حلول عملية لأي مشكلة."</p>
+                <hr class="testimo-hr" />
+                <div class="testimo-footer">
+                  <div class="testimo-info"><h4>يوسف عبد الرحمن</h4><span>مستثمر</span></div>
+                  <div class="testimo-avatar">ي</div>
+                </div>
+              </div>
+              <div class="testimo-card">
+                <div class="testimo-stars">★★★★★</div>
+                <p class="testimo-text">"أنصح أي حد يتعامل معاهم، عندهم مصداقية واحترافية عالية جدًا، وساعدوني أوصل لأفضل نتيجة ممكنة."</p>
+                <hr class="testimo-hr" />
+                <div class="testimo-footer">
+                  <div class="testimo-info"><h4>هبة علي</h4><span>مصممة جرافيك</span></div>
+                  <div class="testimo-avatar">ه</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
@@ -1024,6 +999,18 @@
     <div class="container footer-inner">
       <div class="footer-logo">
         <img src="logo_transparent.png" alt="أوفي" class="brand-logo-footer" />
+        <h3 class="footer-brand-title">أوفي الذكية</h3>
+        <p class="footer-brand-desc">من أبرز الجهات في تقديم خدمات الأعمال للمؤسسات والشركات في المملكة</p>
+        <div class="footer-contact-info">
+          <p>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            مكة المكرمة - الخالدية - أمام مستوصف الخالدية الطبي
+          </p>
+          <p>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span dir="ltr">+966 56 009 6462</span>
+          </p>
+        </div>
       </div>
       <div class="footer-links">
         <a href="#hero">الرئيسية</a>

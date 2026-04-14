@@ -177,10 +177,10 @@ const counterObserver = new IntersectionObserver((entries) => {
     const timer = setInterval(() => {
       current += step;
       if (current >= target) {
-        el.textContent = target.toLocaleString('ar-EG');
+        el.textContent = target.toLocaleString('en-US');
         clearInterval(timer);
       } else {
-        el.textContent = Math.floor(current).toLocaleString('ar-EG');
+        el.textContent = Math.floor(current).toLocaleString('en-US');
       }
     }, 16);
     counterObserver.unobserve(el);
