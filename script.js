@@ -14,7 +14,10 @@ const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbyz79DtWi5kHLX
 const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 60) {
+  const aboutSection = document.getElementById('about');
+  const threshold = aboutSection ? (aboutSection.offsetTop - 120) : 60;
+  
+  if (window.scrollY > threshold) {
     navbar.classList.add('scrolled');
   } else {
     navbar.classList.remove('scrolled');
@@ -144,7 +147,10 @@ const navAnchors = document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll', () => {
   let current = '';
   sections.forEach(sec => {
-    if (window.scrollY >= sec.offsetTop - 90) current = sec.getAttribute('id');
+    const secTop = sec.getBoundingClientRect().top + window.scrollY;
+    if (window.scrollY >= secTop - 120) {
+      current = sec.getAttribute('id');
+    }
   });
   navAnchors.forEach(a => {
     a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--teal-light)' : '';

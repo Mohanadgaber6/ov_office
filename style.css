@@ -76,6 +76,10 @@ img {
   padding: 90px 0;
 }
 
+section[id] {
+  scroll-margin-top: 110px;
+}
+
 /* ---- SECTION BADGE ---- */
 .section-badge {
   display: inline-block;
@@ -170,8 +174,8 @@ img {
 }
 
 .navbar.scrolled {
-  background: transparent !important;
-  box-shadow: none !important;
+  background: rgba(29, 35, 105, 0.99) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
 }
 
 .nav-container {
@@ -1831,17 +1835,20 @@ img {
   border-radius: 50px;
   font-size: 0.95rem;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--blue), var(--blue-light));
-  color: var(--white);
   transition: var(--transition);
   font-family: 'Readex Pro', 'Cairo', sans-serif;
-  border: none;
   cursor: pointer;
+  border: none;
+  
+  /* Silver Base */
+  background: linear-gradient(135deg, #6b7280, #9ca3af);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(107, 114, 128, 0.25);
 }
 
 .btn-pkg:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(41, 50, 135, 0.3);
+  box-shadow: 0 8px 24px rgba(107, 114, 128, 0.4);
 }
 
 .btn-pkg-gold {
@@ -1854,12 +1861,12 @@ img {
 }
 
 .btn-pkg-plat {
-  background: linear-gradient(135deg, var(--teal-dark), var(--teal));
-  box-shadow: 0 4px 16px rgba(62, 184, 188, 0.3);
+  background: linear-gradient(135deg, var(--blue), var(--blue-light));
+  box-shadow: 0 4px 16px rgba(41, 50, 135, 0.25);
 }
 
 .btn-pkg-plat:hover {
-  box-shadow: 0 8px 24px rgba(62, 184, 188, 0.4);
+  box-shadow: 0 8px 24px rgba(41, 50, 135, 0.4);
 }
 
 /* ================== QR SECTION ================== */
