@@ -192,3 +192,18 @@ const counterObserver = new IntersectionObserver((entries) => {
 
 statNums.forEach(el => counterObserver.observe(el));
 
+// ---- TESTIMONIALS SWIPER ----
+document.addEventListener("DOMContentLoaded", () => {
+  if (typeof Swiper !== 'undefined') {
+    new Swiper(".testimoSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop: false
+    });
+  }
+});
