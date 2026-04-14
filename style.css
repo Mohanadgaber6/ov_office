@@ -554,6 +554,10 @@ img { max-width: 100%; height: auto; }
   position: relative;
 }
 /* Swiper Pagination custom styles */
+.testimoSwiper {
+  user-select: none;
+  -webkit-user-select: none;
+}
 .testimoSwiper .swiper-pagination-bullet {
   background: rgba(255,255,255,0.4);
   width: 10px;
