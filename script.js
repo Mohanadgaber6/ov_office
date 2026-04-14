@@ -166,3 +166,29 @@ tabBtns.forEach(btn => {
     document.getElementById(targetId).classList.add('active');
   });
 });
+
+// ---- STATS COUNTER ANIMATION ----
+const statNums = document.querySelectorAll('.stat-num');
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const el = entry.target;
+    const target = parseInt(el.getAttribute('data-target'));
+    const duration = 1800;
+    const step = target / (duration / 16);
+    let current = 0;
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) {
+        el.textContent = target.toLocaleString('ar-EG');
+        clearInterval(timer);
+      } else {
+        el.textContent = Math.floor(current).toLocaleString('ar-EG');
+      }
+    }, 16);
+    counterObserver.unobserve(el);
+  });
+}, { threshold: 0.4 });
+
+statNums.forEach(el => counterObserver.observe(el));
+
